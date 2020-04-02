@@ -1,6 +1,7 @@
 <div>
-<script type="text/javascript">
-document.write(Math.random())
-//这样可以获得一个0~1的随机数
+<script language=javascript>
+var number = Math.random();
+number = Math.ceil(number * 100);
+document.write(number);
 </script>
 </div>
