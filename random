@@ -1,7 +1,12 @@
 <div>
+<h1>
 <script language=javascript>
 var number = Math.random();
-number = Math.ceil(number * 100);
+number = Math.ceil(number * 48);
 document.write(number);
 </script>
+</h1>
+</div>
+<div>
+<a href="https://seikka.github.io/random"><img src="https://unrealcraftgame.files.wordpress.com/2020/04/img_1129.jpg" width="300" height="300" border="0"></a>
 </div>
