@@ -8,15 +8,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-itunes-app" content="app-id=444934666">
     <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="QQ,QQ手机版,手机QQ">
-    <meta itemprop="name" content="I'm QQ - 每一天，乐在沟通">
-    <meta name="description" itemprop="description" content="欢迎访问QQ官网，下载新版QQ，了解QQ最新功能。">
+    <meta name="keywords" content="JJ,JJ手机版,手机JJ">
+    <meta itemprop="name" content="I'm JJ - 每一天，乐在手冲">
+    <meta name="description" itemprop="description" content="欢迎访问JJ官网，下载新版JJ，了解JJ最新功能。">
     <meta itemprop="image" content="https://sqimg.qq.com/qq_product_operations/im/https_src/img/rich.png">
-    <title>I'm QQ - 每一天，乐在沟通</title>
+    <title>I'm JJ - 每一天，乐在手冲</title>
     <script>
       var os = function() {
         var ua = navigator.userAgent,
- 
+ 
                 isQB = /(?:MQQBrowser|QQ)/.test(ua),
                 isWindowsPhone = /(?:Windows Phone)/.test(ua),
                 isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
@@ -41,17 +41,17 @@
           isIpad : isIpad
         };
       }();
- 
-      var downURL = '//itunes.apple.com/cn/app/qq-2011/id444934666?mt=8' ;
- 
+ 
+      var downURL = 'https://seikka.github.io' ;
+ 
       var searchstr = window.location.search,
               hashstr = window.location.hash;
- 
+ 
       if(os.isAndroid){
-        window.location.replace("https://im.qq.com/immobile/android/"+searchstr+hashstr);
+        window.location.replace("https://seikka.github.io/"+searchstr+hashstr);
       }
       else if(os.isPc){
-        window.location.replace("https://im.qq.com/"+searchstr+hashstr);
+        window.location.replace("https://seikka.github.io/"+searchstr+hashstr);
       }
     </script>
     <link rel="stylesheet" type="text/css" href="https://sqimg.qq.com/qq_product_operations/im/https_src/css/imb6.2.css">
@@ -77,22 +77,22 @@
         text-align: center;
         /*color: #474747;*/
         font-size: 12px;
- 
+ 
       }
       #vernew{
         margin: 15px 0 10px;
       }
- 
+ 
       .radius-btn {
         border-radius: 999px;
- 
+ 
       }
- 
+ 
       footer {
         height: 180px;
         padding-top: 6.25%;
       }
- 
+ 
       footer .download-btn {
         margin-top: 0;
         margin-bottom: 5%;
@@ -124,7 +124,7 @@
       #homedown:active:before{
         display: block;
       }
- 
+ 
       /* .content-img{
         margin-left: -45.45%;
         width: 90.9%;
@@ -139,7 +139,7 @@
         bottom: 0;
         width: 100%;
         background: url(https://qzonestyle.gtimg.cn/aoi/sola/20190410171824_5DkqacaOfP.png) 0 0 no-repeat;
- 
+ 
         -webkit-background-size: 100% auto;
         background-size: 100% auto;
         position: absolute;
@@ -147,7 +147,7 @@
         height:60%;
         z-index: 1;
       }
- 
+ 
       /* @media only screen and (min-width: 320px) and (min-aspect-ratio: 9/15){
         .content-img{
           -webkit-transform: scale(0.9);
@@ -176,7 +176,7 @@
           -webkit-transform: scale(0.7);
         }
       } */
- 
+ 
       /*iphoneX 媒体查询*/
       @media only screen and (min-device-width: 375px) and (min-device-height:812px) and (-webkit-device-pixel-ratio:3){
         .content-img{
@@ -188,11 +188,11 @@
         }
       }
     </style>
- 
- 
- 
- 
-        <title>I'm QQ - 每一天，乐在沟通</title>
+ 
+ 
+ 
+ 
+        <title>I'm QQ - 每一天，乐在手冲</title>
         <script>(function(t,u){function v(b){return function(c){return Object.prototype.toString.call(c)==="[object "+b+"]"}}function Q(){return w++}function I(b,c){var a;a=b.charAt(0);if(R.test(b))a=b;else if("."===a){a=(c?c.match(E)[0]:h.cwd)+b;for(a=a.replace(S,"/");a.match(J);)a=a.replace(J,"/")}else a="/"===a?(a=h.cwd.match(T))?a[0]+b.substring(1):b:h.base+b;return a}function K(b,c){if(!b)return"";var a=b,d=h.alias,a=b=d&&F(d[a])?d[a]:a,d=h.paths,g;if(d&&(g=a.match(U))&&F(d[g[1]]))a=d[g[1]]+g[2];g=a;var e=h.vars;
     e&&-1<g.indexOf("{")&&(g=g.replace(V,function(a,b){return F(e[b])?e[b]:a}));a=g.length-1;d=g.charAt(a);b="#"===d?g.substring(0,a):".js"===g.substring(a-2)||0<g.indexOf("?")||".css"===g.substring(a-3)||"/"===d?g:g+".js";g=I(b,c);var a=h.map,l=g;if(a)for(var d=0,f=a.length;d<f&&!(l=a[d],l=x(l)?l(g)||g:g.replace(l[0],l[1]),l!==g);d++);return l}function L(b,c){var a=b.sheet,d;if(M)a&&(d=!0);else if(a)try{a.cssRules&&(d=!0)}catch(g){"NS_ERROR_DOM_SECURITY_ERR"===g.name&&(d=!0)}setTimeout(function(){d?
     c():L(b,c)},20)}function W(){if(y)return y;if(z&&"interactive"===z.readyState)return z;for(var b=s.getElementsByTagName("script"),c=b.length-1;0<=c;c--){var a=b[c];if("interactive"===a.readyState)return z=a}}function e(b,c){this.uri=b;this.dependencies=c||[];this.exports=null;this.status=0;this._waitings={};this._remain=0}if(!t.seajs){var f=t.seajs={version:"2.1.1"},h=f.data={},X=v("Object"),F=v("String"),A=Array.isArray||v("Array"),x=v("Function"),w=0,p=h.events={};f.on=function(b,c){(p[b]||(p[b]=
@@ -221,7 +221,7 @@
                 "wx_jssdk" : "https://res.wx.qq.com/open/js/jweixin-1.0.0.js?max_age=36000000",
             }
         });
- 
+ 
     })();</script>
     </head>
     <body class="loaded show-top-left" style="overflow: hidden;">
@@ -245,7 +245,7 @@
             <a pvg="immobile.menusafe" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://aq.qq.com/">安全中心</a>
           </li>
           <li class="span1 row-arr flex fade-in-1">
-            <a pvg="immobile.menuhuiyuan" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://vip.qq.com/">QQ会员</a>
+            <a pvg="immobile.menuhuiyuan" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://vip.qq.com/">JJ会员</a>
           </li>
           <li class="span1 row-arr flex fade-in-1">
             <a pvg="immobile.menuhelp" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://url.cn/OLVsaa">常用帮助</a>
@@ -268,7 +268,7 @@
           <img id="t_down" pvg="immobile.t_down" class="radius-btn" src="https://sqimg.qq.com/qq_product_operations/imb/icon-download.png">
         </a>
       </div>
- 
+ 
       <!-- 背景图 -->
       <div class="page-bg page-bg-2 active" style="z-index: -10; height: 454px;"></div>
       <div class="page-bg page-bg-4 active" style="height: 454px;"></div>
@@ -297,11 +297,11 @@
         </section>
         <section class="page page-img page-2 skrollable skrollable-between" data-emit-events="" data-top="" style="height: 454px;">
           <div class="background"></div>
-          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">沟通是跨越 千山万水的亲切声音</p>
+          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">手冲是跨越 千山万水的亲切声音</p>
         </section>
         <section class="page page-detial page-3" style="height: 454px;">
-          <h2>QQ 音视频
-            <small>随时随地体验QQ高清通话 与好友想聊多久就聊多久</small>
+          <h2>JJ 音视频
+            <small>随时随地体验JJ高清裸聊 与好友想聊多久就聊多久</small>
           </h2>
           <ul class="figs">
             <li class="f01">两人、多人通话</li>
@@ -314,11 +314,11 @@
         </section>
         <section class="page page-img page-4 skrollable skrollable-between" data-emit-events="" data-bottom-top="" style="height: 454px;">
           <div class="background"></div>
-          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">沟通是随时随地 爽快收发</p>
+          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">手冲是随时随地 爽快收发</p>
         </section>
         <section class="page page-detial page-5" style="height: 454px;">
-          <h2>QQ 音视频
-            <small>随时随地体验QQ高清通话 与好友想聊多久就聊多久</small>
+          <h2>JJ 音视频
+            <small>随时随地体验JJ高清裸聊 与好友想聊多久就聊多久</small>
           </h2>
           <ul class="figs">
             <li class="f01">文件漫游</li>
@@ -331,14 +331,14 @@
         </section>
         <section class="page page-img page-6 skrollable skrollable-between" data-emit-events="" data-bottom-top="" style="height: 454px;">
           <div class="background"></div>
-          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">沟通是和志同道合 的他们放肆青春</p>
+          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">手冲是和志同道合 的她们放肆青春</p>
         </section>
         <section class="page page-detial page-7" style="height: 454px;">
-          <h2>兴趣部落
-            <small>在兴趣部落和你一样的人 期待和你一起发现精彩</small>
+          <h2>性趣部落
+            <small>在性趣部落和你一样的人 期待和你一起发现精彩</small>
           </h2>
           <ul class="figs">
-            <li class="f01">兴趣社区</li>
+            <li class="f01">性趣社区</li>
             <li class="f02">附近热点</li>
             <li class="f03">精彩图集</li>
           </ul>
@@ -362,10 +362,10 @@
             <script>
               document.write((new Date()).getFullYear());
             </script>2020 Tencent. All Rights Reserved.</p>
-          <p>腾讯公司 版权所有</p>
+          <p>JJ公司 版权所有</p>
         </footer>
       </div>
- 
+ 
       <script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
       <script src="https://sqimg.qq.com/qq_product_operations/imb/zepto.min.js"></script>
       <script src="https://sqimg.qq.com/qq_product_operations/imb/skrollr.min.js"></script>
@@ -380,7 +380,7 @@
           });
           BJ_REPORT.tryJs().spyAll();
           document.documentElement.style.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) + "px";
- 
+ 
           $.getScript = function(src, func) {
             var script = document.createElement('script');
             script.async = "async";
@@ -398,7 +398,7 @@
             set: function(name, value, domain, path, hour) {
               var expire = new Date();
               expire.setTime(expire.getTime() + (hour ? 3600000 * hour : 30 * 24 * 60 * 60 * 1000));
- 
+ 
               document.cookie = name + "=" + value + "; " + "expires=" + expire.toGMTString() + "; path=" + (path ? path : "/") + "; " + (domain ? ("domain=" + domain + ";") : "");
             },
             del: function(name, domain, path) {
@@ -409,7 +409,7 @@
               return !u ? null : parseInt(u.substring(1, u.length), 10);
             }
           };
- 
+ 
           var htmlEncodeDict = {
             '"': "#34",
             "<": "#60",
@@ -424,23 +424,23 @@
                       return "&" + htmlEncodeDict[all] + ";";
                     });
           };
- 
+ 
           window.loginAll = function(json) {
- 
+ 
             if (json && json.result == 0) {
               uin = cookie.uin();
               $("#imlogin").addClass("logined");
               $("#imlogin").html(encodeHtml(json.nick)+" [退出]");
- 
+ 
             }
           };
- 
+ 
           try {
             var uin = cookie.uin();
             var skey = cookie.get("skey");
             if (!!uin) {
               $.getScript("https://proxy.now.qq.com/tx_tls_gate=qfwd.qq.com/?uin=" + uin + "&skey=" + skey + "&func=loginAll&refresh=0&ran="+Math.random(), function() {});
- 
+ 
             }
           } catch (e) {}
           var getHash = function(name) {
@@ -459,9 +459,9 @@
             }
             return null;
           };
- 
+ 
           var adtagData = getSearch('adtag') || getHash('adtag') || "";
- 
+ 
           if (pgvSendClick) {
             pgvMain();
             pgvSendClick({
@@ -472,13 +472,13 @@
             });
           }
           var shareconfig = {
-            title : "I'm QQ - 每一天，乐在沟通",
-            des : "欢迎访问QQ官网，下载新版QQ，了解QQ最新功能。",
+            title : "I'm JJ - 每一天，乐在沟通",
+            des : "欢迎访问JJ官网，下载新版JJ，了解JJ最新功能。",
             img : "https://sqimg.qq.com/qq_product_operations/im/https_src/img/rich.png",
             share_url : '//im.qq.com/immobile/index.html?_wv=1025&adtag=share',
             wechat_url : '//im.qq.com/immobile/index.html?_wv=1025&adtag=wechatshare'
           };
- 
+ 
           if (mqq.device.isMobileQQ()) {
             window.setTimeout(function() {
               mqq.data.setShareInfo({
@@ -535,7 +535,7 @@
               onBridgeReady();
             }
           }
- 
+ 
           $("body").on("click touch",function(e){
             if($(e.target).attr("pvg")){
               if (pgvSendClick) {
@@ -544,14 +544,14 @@
                 });
               }
             }
- 
+ 
             var id = $(e.target).attr("id");
             var _href = $(e.target).attr("_href");
             var classname = $(e.target).attr("class");
             if(!!_href){
               location.href = _href;
             }
- 
+ 
             if($(e.target).hasClass("logined")){
               cookie.del("uin", ".qq.com");
               cookie.del("skey", ".qq.com");
@@ -560,45 +560,45 @@
               $("#imlogin").removeClass("logined");
               $("#imlogin").html("登录");
             }else if( id==="imlogin"){
- 
+ 
               location.href = '//ui.ptlogin2.qq.com/cgi-bin/login?style=8&appid=715037605&s_url='+encodeURIComponent(window.location.href)
             }
- 
+ 
             if( id === "homedown" || id === "footdown" ){
               location.href = downURL;
             }
             if(id === "t_down" && $('.loaded').hasClass('show-top-left')){
               location.href = downURL;
             }
- 
- 
+ 
+ 
           });
- 
- 
+ 
+ 
           $('body').addClass("loaded");
- 
+ 
           var screenH = (window.screen.height - window.innerHeight) > 120 ? window.innerHeight : window.screen.height;
           var viewH = window.innerHeight;
- 
+ 
           var $body = $('body');
- 
+ 
           var $pages = $('.page');
           var $firstPage = $('.page-1');
           var $pageBGs = $('.page-bg');
           var $imgPages = $('.page-img');
           var $detialPages = $('.page-detial');
- 
+ 
           var $menu = $('.menu');
- 
+ 
           var mySkrollr;
- 
+ 
           /*设定高度*/
           initHight();
           $(window).resize(initHight);
- 
+ 
           function initHight() {
             window.scrollTo(0, 1);
- 
+ 
             if (window.innerWidth / window.innerHeight > 320 / 440) {
               $body.addClass("small-screen");
               screenH = window.innerWidth / 320 * 440;
@@ -614,7 +614,7 @@
             $detialPages.css('height', screenH);
             $pageBGs.css('height', screenH);
             $menu.css('height', viewH);
- 
+ 
             setTimeout(function() {
               if (mySkrollr) {
                 mySkrollr.destroy();
@@ -622,7 +622,7 @@
               initSkrollr();
             }, 0);
           }
- 
+ 
           /*菜单*/
           var dontShowMenu = false;
           var dontHideMenu = false;
@@ -631,39 +631,39 @@
               dontHideMenu = true;
               $body.addClass('show-menu');
               $menu.css('clip', 'rect(0,9999px,' + viewH + 'px,0)');
- 
+ 
               mySkrollr && mySkrollr.destroy();
- 
+ 
               $body.css('overflow', 'hidden');
               $body.css('height', viewH);
- 
+ 
               setTimeout(function() {
                 dontHideMenu = false;
               }, 500);
             }
           });
- 
+ 
           $('.close-menu-btn').on('tap click touch', function(e) {
             if (!dontHideMenu) {
               $body.removeClass('show-menu');
               dontShowMenu = true;
               $menu.css('clip', 'rect(0,9999px,0px,0)');
- 
+ 
               initSkrollr();
- 
+ 
               setTimeout(function() {
                 dontShowMenu = false;
               }, 500);
             }
             return false;
           });
- 
+ 
           var $page2 = $(".page-2");
           var $page4 = $(".page-4");
           var $page6 = $(".page-6");
           var $footerDownBtn = $('footer .download-btn');
- 
- 
+ 
+ 
           function initSkrollr() {
             mySkrollr = skrollr.init({
               smoothScrolling: false,
@@ -689,7 +689,7 @@
                   }
                   return;
                 }
- 
+ 
                 var nameDir = name + "." + direction;
                 if (element == $page2[0]) {
                   if (nameDir == "dataBottomTop.down" || nameDir == "dataTopBottom.up") {
@@ -710,36 +710,36 @@
                     $pageBGs.eq(2).removeClass('active');
                   }
                 }
- 
+ 
               }
             });
           }
- 
+ 
         });
       </script>
- 
- 
- 
+ 
+ 
+ 
             <script> 
- 
+ 
                 window.seajs && window.seajs.use('//s1.url.cn/hybrid-qq/common/hybridAsync/index.js', function(res){
                     window.hybrid = res
- 
- 
+ 
+ 
                 window.seajs && window.seajs.use('//s1.url.cn/hybrid-qq//app/im.qq.com/mobileqq/index.js', function(res){
- 
+ 
                     if(res && res.init && typeof res.init === 'function'){
                         res.init()
                     }
- 
- 
+ 
+ 
                 })
- 
- 
+ 
+ 
                 })
- 
+ 
         </script>
- 
-        <script>window.syncData = {"configSystem":{"firstPage":{"bgImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205342_3ec92f.png","frontImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205352_46fe95.png","titleImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20200313151019_bea4ba.png","btnImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205411_d3e341.png","version":"8.3.0","publishDate":"2020-03-22","安卓下载地址":"https://itunes.apple.com/cn/app/qq-2011/id444934666?mt=8"},"zZConfigerUpdateTime":1584844215},"afterHandler":"random num3.8745710936753833"}</script>
- 
+ 
+        <script>window.syncData = {"configSystem":{"firstPage":{"bgImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205342_3ec92f.png","frontImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205352_46fe95.png","titleImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20200313151019_bea4ba.png","btnImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205411_d3e341.png","version":"8.3.0","publishDate":"2020-03-22","安卓下载地址":"https://seikka.github.io"},"zZConfigerUpdateTime":1584844215},"afterHandler":"random num3.8745710936753833"}</script>
+ 
     </body>
