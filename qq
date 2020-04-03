@@ -1,0 +1,745 @@
+<head>
+           <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' *.url.cn *.idqqimg.com *.qq.com *.gtimg.cn 'unsafe-inline' 'unsafe-eval';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-itunes-app" content="app-id=444934666">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="QQ,QQ手机版,手机QQ">
+    <meta itemprop="name" content="I'm QQ - 每一天，乐在沟通">
+    <meta name="description" itemprop="description" content="欢迎访问QQ官网，下载新版QQ，了解QQ最新功能。">
+    <meta itemprop="image" content="https://sqimg.qq.com/qq_product_operations/im/https_src/img/rich.png">
+    <title>I'm QQ - 每一天，乐在沟通</title>
+    <script>
+      var os = function() {
+        var ua = navigator.userAgent,
+ 
+                isQB = /(?:MQQBrowser|QQ)/.test(ua),
+                isWindowsPhone = /(?:Windows Phone)/.test(ua),
+                isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+                isAndroid = /(?:Android)/.test(ua),
+                isFireFox = /(?:Firefox)/.test(ua),
+                isChrome = /(?:Chrome|CriOS)/.test(ua),
+                isIpad = /(?:iPad|PlayBook)/.test(ua),
+                isTablet = /(?:iPad|PlayBook)/.test(ua)||(isFireFox && /(?:Tablet)/.test(ua)),
+                isSafari = /(?:Safari)/.test(ua),
+                isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+                isOpen= /(?:Opera Mini)/.test(ua),
+                isUC = /(?:UCWEB|UCBrowser)/.test(ua),
+                isPc = !isPhone && !isAndroid && !isSymbian;
+        return {
+          isQB: isQB,
+          isTablet: isTablet,
+          isPhone: isPhone,
+          isAndroid : isAndroid,
+          isPc : isPc,
+          isOpen : isOpen,
+          isUC: isUC,
+          isIpad : isIpad
+        };
+      }();
+ 
+      var downURL = '//itunes.apple.com/cn/app/qq-2011/id444934666?mt=8' ;
+ 
+      var searchstr = window.location.search,
+              hashstr = window.location.hash;
+ 
+      if(os.isAndroid){
+        window.location.replace("https://im.qq.com/immobile/android/"+searchstr+hashstr);
+      }
+      else if(os.isPc){
+        window.location.replace("https://im.qq.com/"+searchstr+hashstr);
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://sqimg.qq.com/qq_product_operations/im/https_src/css/imb6.2.css">
+    <style>
+      .page-1 {
+        background: url('https://qzonestyle.gtimg.cn/aoi/sola/20190410171824_Uxgggy15Zx.jpg') center bottom no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        /*BFC*/
+      }
+      .page-1 h1 {
+        margin: 2% auto 10px;
+        padding-top: 31.6%;
+        width: 100%;
+        height: 0;
+        background: url(https://qzonestyle.gtimg.cn/aoi/sola/20190410171824_f4ZR0PDA84.png) center center no-repeat;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+        overflow: hidden;
+      }
+      /*.page-1 .img2{ display: block; width: 77.6%;; margin: 5% auto;}*/
+      .vernew {
+        text-align: center;
+        /*color: #474747;*/
+        font-size: 12px;
+ 
+      }
+      #vernew{
+        margin: 15px 0 10px;
+      }
+ 
+      .radius-btn {
+        border-radius: 999px;
+ 
+      }
+ 
+      footer {
+        height: 180px;
+        padding-top: 6.25%;
+      }
+ 
+      footer .download-btn {
+        margin-top: 0;
+        margin-bottom: 5%;
+      }
+      /*iphoneX 媒体查询*/
+      #homedown{
+        margin: 0 auto;
+        width: 43.3%;padding-top: 13%;
+        background: transparent url('https://qzonestyle.gtimg.cn/aoi/sola/20190410171824_1NoxJAYL0S.png') no-repeat center;
+        background-size: contain;
+        position: relative;
+        z-index: 2;
+        /* overflow: hidden; */
+        display:block;
+      }
+      #homedown:before{
+        content:"";
+        width: 102%;
+        height: 100%;
+        background: transparent url('https://qzonestyle.gtimg.cn/aoi/sola/20190410171824_1NoxJAYL0S.png') no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 0;left: -1%;
+        display: none;
+      }
+      #homedown:active{
+        background-image: none;
+      }
+      #homedown:active:before{
+        display: block;
+      }
+ 
+      /* .content-img{
+        margin-left: -45.45%;
+        width: 90.9%;
+        height: ;
+        background: url(https://sqimg.qq.com/qq_product_operations/im/mobileqq/mp/7.7.5/home-content.png) 0 0 no-repeat;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+        position: absolute;
+        bottom: 0;left: 50%;
+      } */
+      .content-img{
+        bottom: 0;
+        width: 100%;
+        background: url(https://qzonestyle.gtimg.cn/aoi/sola/20190410171824_5DkqacaOfP.png) 0 0 no-repeat;
+ 
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+        position: absolute;
+        bottom: 0;
+        height:60%;
+        z-index: 1;
+      }
+ 
+      /* @media only screen and (min-width: 320px) and (min-aspect-ratio: 9/15){
+        .content-img{
+          -webkit-transform: scale(0.9);
+          -webkit-transform-origin: center bottom;
+        }
+      }
+      @media only screen and (min-width: 320px) and (min-aspect-ratio: 9/14){
+        .content-img{
+          -webkit-transform: scale(0.8);
+        }
+      } */
+      @media only screen and (min-width: 320px) and (min-aspect-ratio: 9/13){
+        .page-1 h1{
+          margin: -2% auto 10px;
+          -webkit-transform: scale(0.8);
+        }
+        .small-screen .page-1 h1{
+          margin: -2% auto 10px;
+        }
+        #vernew{
+          margin: -10px 0 10px;
+        }
+      }
+      /* @media only screen and (min-width: 320px) and (min-aspect-ratio: 9/12){
+        .content-img{
+          -webkit-transform: scale(0.7);
+        }
+      } */
+ 
+      /*iphoneX 媒体查询*/
+      @media only screen and (min-device-width: 375px) and (min-device-height:812px) and (-webkit-device-pixel-ratio:3){
+        .content-img{
+          background-image: url(https://sqimg.qq.com/qq_product_operations/im/mobileqq/mp/7.9.5/home-contentx.png);
+          /* height: 54%; */
+          /* max-height: 270px; */
+          width: 100%;
+          left: 0;
+        }
+      }
+    </style>
+ 
+ 
+ 
+ 
+        <title>I'm QQ - 每一天，乐在沟通</title>
+        <script>(function(t,u){function v(b){return function(c){return Object.prototype.toString.call(c)==="[object "+b+"]"}}function Q(){return w++}function I(b,c){var a;a=b.charAt(0);if(R.test(b))a=b;else if("."===a){a=(c?c.match(E)[0]:h.cwd)+b;for(a=a.replace(S,"/");a.match(J);)a=a.replace(J,"/")}else a="/"===a?(a=h.cwd.match(T))?a[0]+b.substring(1):b:h.base+b;return a}function K(b,c){if(!b)return"";var a=b,d=h.alias,a=b=d&&F(d[a])?d[a]:a,d=h.paths,g;if(d&&(g=a.match(U))&&F(d[g[1]]))a=d[g[1]]+g[2];g=a;var e=h.vars;
+    e&&-1<g.indexOf("{")&&(g=g.replace(V,function(a,b){return F(e[b])?e[b]:a}));a=g.length-1;d=g.charAt(a);b="#"===d?g.substring(0,a):".js"===g.substring(a-2)||0<g.indexOf("?")||".css"===g.substring(a-3)||"/"===d?g:g+".js";g=I(b,c);var a=h.map,l=g;if(a)for(var d=0,f=a.length;d<f&&!(l=a[d],l=x(l)?l(g)||g:g.replace(l[0],l[1]),l!==g);d++);return l}function L(b,c){var a=b.sheet,d;if(M)a&&(d=!0);else if(a)try{a.cssRules&&(d=!0)}catch(g){"NS_ERROR_DOM_SECURITY_ERR"===g.name&&(d=!0)}setTimeout(function(){d?
+    c():L(b,c)},20)}function W(){if(y)return y;if(z&&"interactive"===z.readyState)return z;for(var b=s.getElementsByTagName("script"),c=b.length-1;0<=c;c--){var a=b[c];if("interactive"===a.readyState)return z=a}}function e(b,c){this.uri=b;this.dependencies=c||[];this.exports=null;this.status=0;this._waitings={};this._remain=0}if(!t.seajs){var f=t.seajs={version:"2.1.1"},h=f.data={},X=v("Object"),F=v("String"),A=Array.isArray||v("Array"),x=v("Function"),w=0,p=h.events={};f.on=function(b,c){(p[b]||(p[b]=
+    [])).push(c);return f};f.off=function(b,c){if(!b&&!c)return p=h.events={},f;var a=p[b];if(a)if(c)for(var d=a.length-1;0<=d;d--)a[d]===c&&a.splice(d,1);else delete p[b];return f};var m=f.emit=function(b,c){var a=p[b],d;if(a)for(a=a.slice();d=a.shift();)d(c);return f},E=/[^?#]*\//,S=/\/\.\//g,J=/\/[^/]+\/\.\.\//,U=/^([^/:]+)(\/.+)$/,V=/{([^{]+)}/g,R=/^\/\/.|:\//,T=/^.*?\/\/.*?\//,n=document,q=location,B=q.href.match(E)[0],k=n.getElementsByTagName("script"),k=n.getElementById("seajsnode")||k[k.length-
+    1],k=((k.hasAttribute?k.src:k.getAttribute("src",4))||B).match(E)[0],s=n.getElementsByTagName("head")[0]||n.documentElement,N=s.getElementsByTagName("base")[0],O=/\.css(?:\?|$)/i,Y=/^(?:loaded|complete|undefined)$/,y,z,M=536>1*navigator.userAgent.replace(/.*AppleWebKit\/(\d+)\..*/,"$1"),Z=/"(?:\\"|[^"])*"|'(?:\\'|[^'])*'|\/\*[\S\s]*?\*\/|\/(?:\\\/|[^\/\r\n])+\/(?=[^\/])|\/\/.*|\.\s*require|(?:^|[^$])\brequire\s*\(\s*(["'])(.+?)\1\s*\)/g,$=/\\\\/g,r=f.cache={},C,G={},H={},D={},j=e.STATUS={FETCHING:1,
+    SAVED:2,LOADING:3,LOADED:4,EXECUTING:5,EXECUTED:6};e.prototype.resolve=function(){for(var b=this.dependencies,c=[],a=0,d=b.length;a<d;a++)c[a]=e.resolve(b[a],this.uri);return c};e.prototype.load=function(){if(!(this.status>=j.LOADING)){this.status=j.LOADING;var b=this.resolve();m("load",b);for(var c=this._remain=b.length,a,d=0;d<c;d++)a=e.get(b[d]),a.status<j.LOADED?a._waitings[this.uri]=(a._waitings[this.uri]||0)+1:this._remain--;if(0===this._remain)this.onload();else{for(var g={},d=0;d<c;d++)a=
+    r[b[d]],a.status<j.FETCHING?a.fetch(g):a.status===j.SAVED&&a.load();for(var h in g)if(g.hasOwnProperty(h))g[h]()}}};e.prototype.onload=function(){this.status=j.LOADED;this.callback&&this.callback();var b=this._waitings,c,a;for(c in b)if(b.hasOwnProperty(c)&&(a=r[c],a._remain-=b[c],0===a._remain))a.onload();delete this._waitings;delete this._remain};e.prototype.fetch=function(b){function c(){var a=g.requestUri,b=g.onRequest,c=g.charset,d=O.test(a),e=n.createElement(d?"link":"script");if(c&&(c=x(c)?
+    c(a):c))e.charset=c;var f=e;d&&(M||!("onload"in f))?setTimeout(function(){L(f,b)},1):f.onload=f.onerror=f.onreadystatechange=function(){Y.test(f.readyState)&&(f.onload=f.onerror=f.onreadystatechange=null,!d&&!h.debug&&s.removeChild(f),f=null,b())};d?(e.rel="stylesheet",e.href=a):(e.async=!0,e.src=a);y=e;N?s.insertBefore(e,N):s.appendChild(e);y=null}function a(){delete G[f];H[f]=!0;C&&(e.save(d,C),C=null);var a,b=D[f];for(delete D[f];a=b.shift();)a.load()}var d=this.uri;this.status=j.FETCHING;var g=
+    {uri:d};m("fetch",g);var f=g.requestUri||d;!f||H[f]?this.load():G[f]?D[f].push(this):(G[f]=!0,D[f]=[this],m("request",g={uri:d,requestUri:f,onRequest:a,charset:h.charset}),g.requested||(b?b[g.requestUri]=c:c()))};e.prototype.exec=function(){function b(a){return e.get(b.resolve(a)).exec()}if(this.status>=j.EXECUTING)return this.exports;this.status=j.EXECUTING;var c=this.uri;b.resolve=function(a){return e.resolve(a,c)};b.async=function(a,g){e.use(a,g,c+"_async_"+w++);return b};var a=this.factory,a=
+    x(a)?a(b,this.exports={},this):a;a===u&&(a=this.exports);null===a&&!O.test(c)&&m("error",this);delete this.factory;this.exports=a;this.status=j.EXECUTED;m("exec",this);return a};e.resolve=function(b,c){var a={id:b,refUri:c};m("resolve",a);return a.uri||K(a.id,c)};e.define=function(b,c,a){var d=arguments.length;1===d?(a=b,b=u):2===d&&(a=c,A(b)?(c=b,b=u):c=u);if(!A(c)&&x(a)){var g=[];a.toString().replace($,"").replace(Z,function(a,b,c){c&&g.push(c)});c=g}d={id:b,uri:e.resolve(b),deps:c,factory:a};if(!d.uri&&
+    n.attachEvent){var f=W();f&&(d.uri=f.src)}m("define",d);d.uri?e.save(d.uri,d):C=d};e.save=function(b,c){var a=e.get(b);a.status<j.SAVED&&(a.id=c.id||b,a.dependencies=c.deps||[],a.factory=c.factory,a.status=j.SAVED)};e.get=function(b,c){return r[b]||(r[b]=new e(b,c))};e.use=function(b,c,a){var d=e.get(a,A(b)?b:[b]);d.callback=function(){for(var a=[],b=d.resolve(),e=0,f=b.length;e<f;e++)a[e]=r[b[e]].exec();c&&c.apply(t,a);delete d.callback};d.load()};e.preload=function(b){var c=h.preload,a=c.length;
+    a?e.use(c,function(){c.splice(0,a);e.preload(b)},h.cwd+"_preload_"+w++):b()};f.use=function(b,c){e.preload(function(){e.use(b,c,h.cwd+"_use_"+w++)});return f};e.define.cmd={};t.define=e.define;f.Module=e;h.fetchedList=H;h.cid=Q;f.resolve=K;f.require=function(b){return(r[e.resolve(b)]||{}).exports};h.base=(k.match(/^(.+?\/)(\?\?)?(seajs\/)+/)||["",k])[1];h.dir=k;h.cwd=B;h.charset="utf-8";var B=h,P=[],q=q.search.replace(/(seajs-\w+)(&|$)/g,"$1=1$2"),q=q+(" "+n.cookie);q.replace(/(seajs-\w+)=1/g,function(b,
+    c){P.push(c)});B.preload=P;f.config=function(b){for(var c in b){var a=b[c],d=h[c];if(d&&X(d))for(var e in a)d[e]=a[e];else A(d)?a=d.concat(a):"base"===c&&("/"===a.slice(-1)||(a+="/"),a=I(a)),h[c]=a}m("config",b);return f}}})(this);
+    </script>
+    <script> (function() {
+        seajs.config({
+            charset: 'utf-8',
+            timeout: 5 * 60 * 1000,
+            debug: 0,
+            paths: {
+            },
+            alias: {
+                "qz": "https://qzonestyle.gtimg.cn/qzone/hybrid/lib/index.js",
+                "zepto": "https://qzonestyle.gtimg.cn/ac/lib/zepto/zepto-1.1.4.js",
+                "jquery": "https://qzonestyle.gtimg.cn/ac/lib/jquery/jquery-2.0.3.js?max_age=36000000",
+                "wx_jssdk" : "https://res.wx.qq.com/open/js/jweixin-1.0.0.js?max_age=36000000",
+            }
+        });
+ 
+    })();</script>
+    </head>
+    <body class="loaded show-top-left" style="overflow: hidden;">
+                <div class="menu" style="z-index: 15; height: 454px;">
+        <ul class="">
+          <li class="span1 flex ">
+            <a pvg="immobile.menuclose" href="javascript:;" class="flex-col-1 flex flex-center close-menu-btn">
+              <img src="https://sqimg.qq.com/qq_product_operations/imb/menu-close.png">
+            </a>
+          </li>
+          <li class="span1 row-arr flex fade-in-1">
+            <a id="imlogin" pvg="immobile.menulogin" href="javascript:;" class="flex-col-1 flex flex-center ">登录</a>
+          </li>
+          <li class="span1 row-arr flex fade-in-1">
+            <a pvg="immobile.menuzuce" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://zc.qq.com/phone/index.html">注册</a>
+          </li>
+          <li class="span1 row-div flex flex-center fade-in-no-scale">
+            <div></div>
+          </li>
+          <li class="span1 row-arr flex fade-in-1">
+            <a pvg="immobile.menusafe" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://aq.qq.com/">安全中心</a>
+          </li>
+          <li class="span1 row-arr flex fade-in-1">
+            <a pvg="immobile.menuhuiyuan" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://vip.qq.com/">QQ会员</a>
+          </li>
+          <li class="span1 row-arr flex fade-in-1">
+            <a pvg="immobile.menuhelp" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://url.cn/OLVsaa">常用帮助</a>
+          </li>
+          <li class="span1 row-arr flex fade-in-1">
+            <a pvg="immobile.menufeedback" href="javascript:;" class="flex-col-1 flex flex-center" _href="http://mma.qq.com/feedback/index.html">提交反馈</a>
+          </li>
+          <li class="span2 row-btn fade-in-1">
+            <a href="javascript:;" class=" ">
+              <img pvg="immobile.menu_touch_index" class="radius-btn" src="https://sqimg.qq.com/qq_product_operations/imb/menu-qq-phone-btn.png" alt="" _href="https://im.qq.com/mobileqq/touch/">
+            </a>
+            <a href="javascript:;" class=" menu-pc-btn">
+              <img pvg="immobile.menu_pc_index" class="radius-btn" src="https://sqimg.qq.com/qq_product_operations/imb/menu-qq-pc-btn.png" alt="" _href="https://im.qq.com/pcqq/">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="top-right">
+        <a class="top-right-download-btn">
+          <img id="t_down" pvg="immobile.t_down" class="radius-btn" src="https://sqimg.qq.com/qq_product_operations/imb/icon-download.png">
+        </a>
+      </div>
+ 
+      <!-- 背景图 -->
+      <div class="page-bg page-bg-2 active" style="z-index: -10; height: 454px;"></div>
+      <div class="page-bg page-bg-4 active" style="height: 454px;"></div>
+      <div class="page-bg page-bg-6" style="height: 454px;"></div>
+      <!-- 背景图 -->
+      <div class="main" id="skrollr-body" style="transform: translate(0px, 0px) translateZ(0px);">
+        <section class="page page-1" style="background-image: url(&quot;http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205342_3ec92f.png&quot;); background-size: cover; overflow: hidden; height: 454px; background-position: center bottom; background-repeat: no-repeat no-repeat;">
+          <nav class="overlay">
+            <a pvg="immobile.openmenu" class="menu-btn" href="javascript:void(0)">
+              <img class="radius-btn" src="https://sqimg.qq.com/qq_product_operations/imb/icon-menu.png" alt="">
+            </a>
+          </nav>
+          <h1 style="background: url(http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20200313151019_bea4ba.png) center center no-repeat;
+          -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+          overflow: hidden;">视频对讲</h1>
+          <p id="vernew" class="vernew">最新版本： 8.3.0 | 发布日期： 2020-03-22 </p>
+          <a href="javascript:void(0)" class="download-btn" id="homedown" pvg="immobile.homedown" title="立即下载"></a>
+          <!-- <img class="img2" src="https://sqimg.qq.com/qq_product_operations/im/mobileqq/mp/7.2.5/face.png" alt=""> -->
+          <aside id="scroll-tips" class="scroll-tips">
+            <span class="arr tips_ani"></span>
+          </aside>
+          <div class="content-img" style="background: url(http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205352_46fe95.png) 0 0 no-repeat;
+          -webkit-background-size: 100% auto;
+          background-size: 100% auto;"></div>
+        </section>
+        <section class="page page-img page-2 skrollable skrollable-between" data-emit-events="" data-top="" style="height: 454px;">
+          <div class="background"></div>
+          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">沟通是跨越 千山万水的亲切声音</p>
+        </section>
+        <section class="page page-detial page-3" style="height: 454px;">
+          <h2>QQ 音视频
+            <small>随时随地体验QQ高清通话 与好友想聊多久就聊多久</small>
+          </h2>
+          <ul class="figs">
+            <li class="f01">两人、多人通话</li>
+            <li class="f02">群组通话</li>
+            <li class="f03">屏幕分享</li>
+          </ul>
+          <div class="phone-wrap">
+            <img class="phone" src="https://sqimg.qq.com/qq_product_operations/im/2016/mb/page3-img.png" alt="">
+          </div>
+        </section>
+        <section class="page page-img page-4 skrollable skrollable-between" data-emit-events="" data-bottom-top="" style="height: 454px;">
+          <div class="background"></div>
+          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">沟通是随时随地 爽快收发</p>
+        </section>
+        <section class="page page-detial page-5" style="height: 454px;">
+          <h2>QQ 音视频
+            <small>随时随地体验QQ高清通话 与好友想聊多久就聊多久</small>
+          </h2>
+          <ul class="figs">
+            <li class="f01">文件漫游</li>
+            <li class="f02">多端互动</li>
+            <li class="f03">在线预览</li>
+          </ul>
+          <div class="phone-wrap">
+            <img class="phone" src="https://sqimg.qq.com/qq_product_operations/im/2016/mb/page5-img.png" alt="">
+          </div>
+        </section>
+        <section class="page page-img page-6 skrollable skrollable-between" data-emit-events="" data-bottom-top="" style="height: 454px;">
+          <div class="background"></div>
+          <p data-emit-events="" data-center-top="" class="skrollable skrollable-between">沟通是和志同道合 的他们放肆青春</p>
+        </section>
+        <section class="page page-detial page-7" style="height: 454px;">
+          <h2>兴趣部落
+            <small>在兴趣部落和你一样的人 期待和你一起发现精彩</small>
+          </h2>
+          <ul class="figs">
+            <li class="f01">兴趣社区</li>
+            <li class="f02">附近热点</li>
+            <li class="f03">精彩图集</li>
+          </ul>
+          <div class="phone-wrap">
+            <img class="phone" src="https://sqimg.qq.com/qq_product_operations/im/2016/mb/page7-img.png" alt="">
+            <ul class="qblogWrap">
+              <li class="pic1"></li>
+              <li class="pic2"></li>
+              <li class="pic3"></li>
+            </ul>
+          </div>
+        </section>
+        <footer>
+          <a href="javascript:;" class="download-btn skrollable skrollable-between" data-emit-events="" data-bottom-top="">
+            <img id="footdown" pvg="immobile.footdown" class="radius-btn" src="https://sqimg.qq.com/qq_product_operations/imb/download.png" title="立即下载">
+          </a>
+          <div class="computer">
+            <a pvg="immobile.to_pchome" href="https://im.qq.com/?vpc=1">访问电脑网页版</a>
+          </div>
+          <p>Copyright © 1998 -
+            <script>
+              document.write((new Date()).getFullYear());
+            </script>2020 Tencent. All Rights Reserved.</p>
+          <p>腾讯公司 版权所有</p>
+        </footer>
+      </div>
+ 
+      <script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+      <script src="https://sqimg.qq.com/qq_product_operations/imb/zepto.min.js"></script>
+      <script src="https://sqimg.qq.com/qq_product_operations/imb/skrollr.min.js"></script>
+      <script src="https://sqimg.qq.com/qq_product_operations/jslib/bj-report-tryjs.min.js?_bid=2439" crossorigin="anonymous"></script>
+      <script src="https://pingjs.qq.com/tcss.ping.https.js"></script>
+      <script>
+        $(function() {
+          /*初始化badjs*/
+          BJ_REPORT.init({
+            id: 46,
+            url: "https://mmatest.qq.com/badjs"
+          });
+          BJ_REPORT.tryJs().spyAll();
+          document.documentElement.style.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) + "px";
+ 
+          $.getScript = function(src, func) {
+            var script = document.createElement('script');
+            script.async = "async";
+            script.src = src;
+            if (func) {
+              script.onload = func;
+            }
+            document.getElementsByTagName("head")[0].appendChild(script);
+          }
+          var cookie = {
+            get: function(n) {
+              var m = document.cookie.match(new RegExp("(^| )" + n + "=([^;]*)(;|$)"));
+              return !m ? "" : decodeURIComponent(m[2]);
+            },
+            set: function(name, value, domain, path, hour) {
+              var expire = new Date();
+              expire.setTime(expire.getTime() + (hour ? 3600000 * hour : 30 * 24 * 60 * 60 * 1000));
+ 
+              document.cookie = name + "=" + value + "; " + "expires=" + expire.toGMTString() + "; path=" + (path ? path : "/") + "; " + (domain ? ("domain=" + domain + ";") : "");
+            },
+            del: function(name, domain, path) {
+              document.cookie = name + "=; expires=Mon, 26 Jul 1997 05:00:00 GMT; path=" + (path ? path : "/") + "; " + (domain ? ("domain=" + domain + ";") : "");
+            },
+            uin: function() {
+              var u = cookie.get("uin");
+              return !u ? null : parseInt(u.substring(1, u.length), 10);
+            }
+          };
+ 
+          var htmlEncodeDict = {
+            '"': "#34",
+            "<": "#60",
+            ">": "#62",
+            "&": "#38",
+            " ": "#160"
+          };
+          var encodeHtml = function(s) {
+            s += '';
+            return s.replace(/["<>& ]/g,
+                    function(all) {
+                      return "&" + htmlEncodeDict[all] + ";";
+                    });
+          };
+ 
+          window.loginAll = function(json) {
+ 
+            if (json && json.result == 0) {
+              uin = cookie.uin();
+              $("#imlogin").addClass("logined");
+              $("#imlogin").html(encodeHtml(json.nick)+" [退出]");
+ 
+            }
+          };
+ 
+          try {
+            var uin = cookie.uin();
+            var skey = cookie.get("skey");
+            if (!!uin) {
+              $.getScript("https://proxy.now.qq.com/tx_tls_gate=qfwd.qq.com/?uin=" + uin + "&skey=" + skey + "&func=loginAll&refresh=0&ran="+Math.random(), function() {});
+ 
+            }
+          } catch (e) {}
+          var getHash = function(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.hash.substring(1).match(reg);
+            if ( !! r) {
+              return unescape(r[2]);
+            }
+            return null;
+          };
+          var getSearch = function(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substring(1).match(reg);
+            if ( !! r) {
+              return unescape(r[2]);
+            }
+            return null;
+          };
+ 
+          var adtagData = getSearch('adtag') || getHash('adtag') || "";
+ 
+          if (pgvSendClick) {
+            pgvMain();
+            pgvSendClick({
+              hottag: 'immobile.pv'
+            });
+            pgvSendClick({
+              hottag: "immobile.pv_" + (( !! adtagData) ? '_from_' + adtagData : "")
+            });
+          }
+          var shareconfig = {
+            title : "I'm QQ - 每一天，乐在沟通",
+            des : "欢迎访问QQ官网，下载新版QQ，了解QQ最新功能。",
+            img : "https://sqimg.qq.com/qq_product_operations/im/https_src/img/rich.png",
+            share_url : '//im.qq.com/immobile/index.html?_wv=1025&adtag=share',
+            wechat_url : '//im.qq.com/immobile/index.html?_wv=1025&adtag=wechatshare'
+          };
+ 
+          if (mqq.device.isMobileQQ()) {
+            window.setTimeout(function() {
+              mqq.data.setShareInfo({
+                share_url: shareconfig.share_url,
+                title: shareconfig.title,
+                desc: shareconfig.des,
+                image_url: shareconfig.img
+              }, function() {});
+            }, 200);
+          }else{
+            var onBridgeReady = function() {
+              WeixinJSBridge.on("menu:share:timeline", function(e) {
+                var data = {
+                  img_url: shareconfig.img,
+                  img_width: "120",
+                  img_height: "120",
+                  link: shareconfig.wechat_url,
+                  desc: shareconfig.des,
+                  title: shareconfig.title
+                };
+                WeixinJSBridge.invoke("shareTimeline", data, function(res) {
+                  WeixinJSBridge.log(res.err_msg)
+                });
+              });
+              WeixinJSBridge.on("menu:share:weibo", function() {
+                WeixinJSBridge.invoke("shareWeibo", {
+                  "content": shareconfig.des,
+                  "url": shareconfig.wechat_url
+                }, function(res) {
+                  WeixinJSBridge.log(res.err_msg);
+                });
+              });
+              WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+                WeixinJSBridge.invoke("sendAppMessage", {
+                  img_url: shareconfig.img,
+                  img_width: "120",
+                  img_height: "120",
+                  link: shareconfig.wechat_url,
+                  desc: shareconfig.des,
+                  title: shareconfig.title
+                }, function(res) {
+                  WeixinJSBridge.log(res.err_msg)
+                });
+              });
+            };
+            if (typeof top.window.WeixinJSBridge == "undefined" || !top.window.WeixinJSBridge.invoke) {
+              if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+              } else if (document.attachEvent) {
+                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+              }
+            } else {
+              onBridgeReady();
+            }
+          }
+ 
+          $("body").on("click touch",function(e){
+            if($(e.target).attr("pvg")){
+              if (pgvSendClick) {
+                pgvSendClick({
+                  hottag: $(e.target).attr("pvg")
+                });
+              }
+            }
+ 
+            var id = $(e.target).attr("id");
+            var _href = $(e.target).attr("_href");
+            var classname = $(e.target).attr("class");
+            if(!!_href){
+              location.href = _href;
+            }
+ 
+            if($(e.target).hasClass("logined")){
+              cookie.del("uin", ".qq.com");
+              cookie.del("skey", ".qq.com");
+              cookie.del("uin", "im.qq.com");
+              cookie.del("skey", "im.qq.com");
+              $("#imlogin").removeClass("logined");
+              $("#imlogin").html("登录");
+            }else if( id==="imlogin"){
+ 
+              location.href = '//ui.ptlogin2.qq.com/cgi-bin/login?style=8&appid=715037605&s_url='+encodeURIComponent(window.location.href)
+            }
+ 
+            if( id === "homedown" || id === "footdown" ){
+              location.href = downURL;
+            }
+            if(id === "t_down" && $('.loaded').hasClass('show-top-left')){
+              location.href = downURL;
+            }
+ 
+ 
+          });
+ 
+ 
+          $('body').addClass("loaded");
+ 
+          var screenH = (window.screen.height - window.innerHeight) > 120 ? window.innerHeight : window.screen.height;
+          var viewH = window.innerHeight;
+ 
+          var $body = $('body');
+ 
+          var $pages = $('.page');
+          var $firstPage = $('.page-1');
+          var $pageBGs = $('.page-bg');
+          var $imgPages = $('.page-img');
+          var $detialPages = $('.page-detial');
+ 
+          var $menu = $('.menu');
+ 
+          var mySkrollr;
+ 
+          /*设定高度*/
+          initHight();
+          $(window).resize(initHight);
+ 
+          function initHight() {
+            window.scrollTo(0, 1);
+ 
+            if (window.innerWidth / window.innerHeight > 320 / 440) {
+              $body.addClass("small-screen");
+              screenH = window.innerWidth / 320 * 440;
+              viewH = window.innerHeight;
+            } else {
+              $body.removeClass("small-screen");
+              screenH = window.innerHeight;
+              viewH = window.innerHeight;
+            }
+            $body.css('height', viewH);
+            $firstPage.css('height', viewH);
+            $imgPages.css('height', viewH);
+            $detialPages.css('height', screenH);
+            $pageBGs.css('height', screenH);
+            $menu.css('height', viewH);
+ 
+            setTimeout(function() {
+              if (mySkrollr) {
+                mySkrollr.destroy();
+              }
+              initSkrollr();
+            }, 0);
+          }
+ 
+          /*菜单*/
+          var dontShowMenu = false;
+          var dontHideMenu = false;
+          $('#skrollr-body').on('tap click touch iscrollTap', '.menu-btn', function() {
+            if (!dontShowMenu) {
+              dontHideMenu = true;
+              $body.addClass('show-menu');
+              $menu.css('clip', 'rect(0,9999px,' + viewH + 'px,0)');
+ 
+              mySkrollr && mySkrollr.destroy();
+ 
+              $body.css('overflow', 'hidden');
+              $body.css('height', viewH);
+ 
+              setTimeout(function() {
+                dontHideMenu = false;
+              }, 500);
+            }
+          });
+ 
+          $('.close-menu-btn').on('tap click touch', function(e) {
+            if (!dontHideMenu) {
+              $body.removeClass('show-menu');
+              dontShowMenu = true;
+              $menu.css('clip', 'rect(0,9999px,0px,0)');
+ 
+              initSkrollr();
+ 
+              setTimeout(function() {
+                dontShowMenu = false;
+              }, 500);
+            }
+            return false;
+          });
+ 
+          var $page2 = $(".page-2");
+          var $page4 = $(".page-4");
+          var $page6 = $(".page-6");
+          var $footerDownBtn = $('footer .download-btn');
+ 
+ 
+          function initSkrollr() {
+            mySkrollr = skrollr.init({
+              smoothScrolling: false,
+              mobileDeceleration: 0.002,
+              keyframe: function(element, name, direction) {
+                if (name === 'dataCenterTop') {
+                  $(element).addClass('easeIn');
+                  return;
+                }
+                if (element == $page2[0] && name === 'dataTop') {
+                  if (direction === 'down') {
+                    $body.addClass('show-top-left');
+                  } else {
+                    $body.removeClass('show-top-left');
+                  }
+                  return;
+                }
+                if (element == $footerDownBtn[0] && name === 'dataBottomTop') {
+                  if (direction === 'up') {
+                    $body.addClass('show-top-left');
+                  } else {
+                    $body.removeClass('show-top-left');
+                  }
+                  return;
+                }
+ 
+                var nameDir = name + "." + direction;
+                if (element == $page2[0]) {
+                  if (nameDir == "dataBottomTop.down" || nameDir == "dataTopBottom.up") {
+                    $pageBGs.eq(0).addClass('active');
+                  } else if (nameDir == "dataBottomTop.up" || nameDir == "dataTopBottom.down") {
+                    $pageBGs.eq(0).removeClass('active');
+                  }
+                } else if (element == $page4[0]) {
+                  if (nameDir == "dataBottomTop.down" || nameDir == "dataTopBottom.up") {
+                    $pageBGs.eq(1).addClass('active');
+                  } else if (nameDir == "dataBottomTop.up" || nameDir == "dataTopBottom.down") {
+                    $pageBGs.eq(1).removeClass('active');
+                  }
+                } else if (element == $page6[0]) {
+                  if (nameDir == "dataBottomTop.down" || nameDir == "dataTopBottom.up") {
+                    $pageBGs.eq(2).addClass('active');
+                  } else if (nameDir == "dataBottomTop.up" || nameDir == "dataTopBottom.down") {
+                    $pageBGs.eq(2).removeClass('active');
+                  }
+                }
+ 
+              }
+            });
+          }
+ 
+        });
+      </script>
+ 
+ 
+ 
+            <script> 
+ 
+                window.seajs && window.seajs.use('//s1.url.cn/hybrid-qq/common/hybridAsync/index.js', function(res){
+                    window.hybrid = res
+ 
+ 
+                window.seajs && window.seajs.use('//s1.url.cn/hybrid-qq//app/im.qq.com/mobileqq/index.js', function(res){
+ 
+                    if(res && res.init && typeof res.init === 'function'){
+                        res.init()
+                    }
+ 
+ 
+                })
+ 
+ 
+                })
+ 
+        </script>
+ 
+        <script>window.syncData = {"configSystem":{"firstPage":{"bgImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205342_3ec92f.png","frontImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205352_46fe95.png","titleImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20200313151019_bea4ba.png","btnImg":"http://qzonestyle.gtimg.cn/qzone/qzactStatics/imgs/20190525205411_d3e341.png","version":"8.3.0","publishDate":"2020-03-22","安卓下载地址":"https://itunes.apple.com/cn/app/qq-2011/id444934666?mt=8"},"zZConfigerUpdateTime":1584844215},"afterHandler":"random num3.8745710936753833"}</script>
+ 
+    </body>
