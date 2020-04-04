@@ -111,14 +111,14 @@ img.emoji {
 
 <body class="home page-template-default page page-id-4 wp-custom-logo wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title admin-bar highlander-enabled highlander-light">
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content">跳转到内容</a>
 
-	
-		<header id="masthead" class="site-header responsive-max-width">
+	<header id="masthead" class="site-header responsive-max-width">
 
 			<div class="site-branding">
 
-			<div class="site-logo"><a href="https://seikka.music.blog/" class="custom-logo-link" rel="home"><img width="60" height="60" src="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png" class="custom-logo" alt="Seikka" data-attachment-id="113" data-permalink="https://seikka.music.blog/img_0326-2/" data-orig-file="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png" data-orig-size="60,60" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="IMG_0326" data-image-description="" data-medium-file="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png?w=100" data-large-file="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png?w=100" /></a></div>
+			<div class="site-logo">
+				<a href="https://seikka.music.blog/" class="custom-logo-link" rel="home">
+					<img width="72" height="72" src="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png" class="custom-logo" alt="Seikka" data-attachment-id="113" data-permalink="https://seikka.music.blog/img_0326-2/" data-orig-file="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png" data-orig-size="72,72" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="IMG_0326" data-image-description="" data-medium-file="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png?w=100" data-large-file="https://seikkamusic.files.wordpress.com/2020/02/img_0326-1.png?w=100" /></a></div>
 								<p class="site-title"><a href="https://seikka.music.blog/" rel="home">Seikka</a></p>
 			
 				<p class="site-description">
@@ -145,11 +145,31 @@ img.emoji {
 
 	<div class="entry-content">
 		<div><a name="top" href=""></a></div>
-<div class="wp-block-cover has-background-dim-10 has-background-dim alignfull" style="background-image:url('https://seikkamusic.files.wordpress.com/2020/04/img_1139.jpg');background-position:100% 100%;min-height: 222px;">
 <h3 style="text-align:center;"><span style="color:#00ccff;"><strong><a style="color:#00ccff;" href="#1">推荐</a></strong></span><span style="color:#00ccff;"><strong><a style="color:#00ccff;" href="#1">­</a></strong></span><span style="color:#00ccff;"><strong>&nbsp;</strong></span><span style="color:#00ccff;"><strong><a style="color:#00ccff;" href="#2">最新作品</a></strong></span> <span style="color:#00ccff;"><strong><a style="color:#00ccff;" href="#4">歌曲列表</a></strong></span></h3>
-<div class="wp-block-cover has-background-dim-10 has-background-dim alignfull" style="background-image:url('https://seikkamusic.files.wordpress.com/2020/04/img_1136.jpg');background-position:100% 100%;min-height: 222px;">
-<h1 class="wp-block-cover__inner-container" style="text-align:center;"><span style="color:#ffffff;"><strong>SeikkaMusicLab</strong></span></h1>
+<head>
+<style>
+div
+{
+width:1334px;
+height:580px;
+background:url(https://seikkamusic.files.wordpress.com/2020/04/img_1136.jpg);
+transition:height 1s;
+-moz-transition:height 1s; /* Firefox 4 */
+-webkit-transition:height 1s; /* Safari and Chrome */
+-o-transition:height 1s; /* Opera */
+}
+
+div:hover
+{
+height:1002px;
+}
+</style>
+</head>
+<body>
+
+<div><h1 class="wp-block-cover__inner-container" style="text-align:center"><span style="color:white"><strong>SeikkaMusicLab</strong></span></h1>
 </div>
+</body>
 <div>
 <h2 class="arial" style="text-align:center;"><strong>推荐</strong></h2>
 <a name="1"></a>
