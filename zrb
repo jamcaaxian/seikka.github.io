@@ -1,0 +1,703 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="wap-font-scale" content="no">
+    <meta name="MobileOptimized" content="320">
+    <!-- uc -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <!-- QQ -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>众人帮</title>
+    <meta name="format-detection" content="telephone=no, email=no, adress=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="//cdn2.zhongrenbang.cc/c/css/agile.layout.css">
+    <link rel="stylesheet" type="text/css" href="//cdn2.zhongrenbang.cc/c/css/framework7.md.min.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_57295_z8zvxvswfos.css">
+    <script type="text/javascript" async="" charset="utf-8" src="https://c.cnzz.com/core.php?web_id=1253252559&amp;t=q"></script><script type="text/javascript" async="" charset="utf-8" src="https://w.cnzz.com/c.php?id=1253252559&amp;async=1"></script><script type="text/javascript" src="//libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn2.zhongrenbang.cc/cdncss/next_style_19021502.css">
+    <script type="text/javascript" src="//cdn2.zhongrenbang.cc/cdnjs/public_19021502.js"></script>
+ 
+    <script src="//cdn2.zhongrenbang.cc/bundles/jqueryMobile2"></script>
+ 
+ 
+    <!--[if IE]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+</head>
+<body>
+    <div id="section_container"> 
+ 
+<style type="text/css">
+    .swiper-slide {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+ 
+    .scroll {
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        height: 45px;
+    }
+ 
+        .scroll ul {
+            transform: translateY(0);
+        }
+ 
+    .animate {
+        -webkit-transition: all .3s ease-out;
+    }
+ 
+    .scroll li {
+        overflow: hidden;
+        display: -webkit-box;
+        line-height: 50px;
+        color: #333;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+ 
+    .zrb-column {
+        background: #F2FBFE;
+    }
+ 
+        .zrb-column .color-gray {
+            display: block;
+            padding: 8px 0;
+        }
+ 
+        .zrb-column .icon {
+            width: 34px;
+            height: 34px;
+        }
+ 
+        .zrb-column span {
+            display: block;
+        }
+ 
+    .panel-visible {
+        overflow: hidden;
+        height: 20px;
+    }
+ 
+    .icon_fuli {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M512 512m-450 0a450 450 0 1 0 900 0 450 450 0 1 0-900 0Z' fill='%23E5F1FF'%3E%3C/path%3E%3Cpath d='M512 200c-90 96-246 222-246 360s108 246 246 246 246-108 246-246-150-264-246-360z' fill='%239FC8FE'%3E%3C/path%3E%3Cpath d='M512 674c-54 0-96-42-96-102 0-54 60-96 96-138 36 42 96 84 96 138 0 54-42 102-96 102z' fill='%2372AEFD'%3E%3C/path%3E%3C/svg%3E");
+    }
+ 
+    .icon_jiandan {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M61.44 512c0 248.84224 201.72288 450.56 450.56 450.56 248.84224 0 450.56-201.71776 450.56-450.56 0-248.83712-201.71776-450.56-450.56-450.56-248.83712 0-450.56 201.72288-450.56 450.56z' fill='%23E6FCDE'%3E%3C/path%3E%3Cpath d='M563.53792 725.376V390.85056c-1.11104-17.78176-12.22144-33.7152-28.89728-41.12384l-3.70688-1.85344-32.60416-14.81728-20.00384-8.89344L305.69984 246.3744c-6.66624-2.96448-13.33248-4.44928-20.00384-4.44928a48.92672 48.92672 0 0 0-48.90112 49.26976v480.49664h327.12704l-0.384-46.31552zM376.46336 436.41856V373.8112h62.60736v62.60736H376.46336z m62.23872 54.46144v62.61248H376.0896V490.88h62.61248z m-70.38976 109.65504h78.16704v124.84096H368.31232v-124.84096z' fill='%2361DF18'%3E%3C/path%3E%3Cpath d='M745.06752 350.84288c-5.19168 0-10.368 1.11616-15.55968 2.96448l-133.36064 53.34528 1.83808 366.02368h189.68576V393.81504a42.67008 42.67008 0 0 0-42.60352-42.97216z m-102.61504 170.04544h54.46144v54.45632h-54.46144v-54.45632z m61.1328 204.12416h-67.80416v-108.53376h67.80416v108.53376z' fill='%23ADF77C'%3E%3C/path%3E%3C/svg%3E");
+    }
+ 
+    .icon_gaojia {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M61.44 512c0 248.84224 201.72288 450.56 450.56 450.56 248.84224 0 450.56-201.71776 450.56-450.56 0-248.83712-201.71776-450.56-450.56-450.56-248.83712 0-450.56 201.72288-450.56 450.56z' fill='%23FEE8EB'%3E%3C/path%3E%3Cpath d='M381.7216 725.95968c0-13.24544 13.24544-26.48064 26.48064-26.48064h397.18912c13.24032 0 26.48064 13.2352 26.48064 26.48064v46.336c0 13.2352-13.24032 26.48064-26.48064 26.48064H408.20224c-13.2352 0-26.48064-13.24544-26.48064-26.48064v-46.336z m0-145.6384c0-13.24032 13.24544-26.48064 26.48064-26.48064h397.18912c13.24032 0 26.48064 13.24032 26.48064 26.48064v46.34112c0 13.24032-13.24032 26.48064-26.48064 26.48064H408.20224c-13.2352 0-26.48064-13.24032-26.48064-26.48064v-46.34112z m46.34112-152.25856c0-13.2352 13.24032-26.48064 26.48064-26.48064h397.18912c13.24032 0 26.48064 13.24032 26.48064 26.48064v46.336c0 13.24032-13.24032 26.48064-26.48064 26.48064H454.54336c-13.2352 0-26.48064-13.2352-26.48064-26.48064v-46.336zM328.76032 282.42432c0-19.85536 13.24544-26.48064 26.48064-26.48064h397.184c13.24032 0 26.48064 13.24032 26.48064 26.48064v46.336c0 13.24544-13.24032 26.48064-26.48064 26.48064H355.24608c-13.2352 0-26.48064-13.2352-26.48064-26.48064l-0.00512-46.336z' fill='%23FFA4A5'%3E%3C/path%3E%3Cpath d='M202.98752 580.32128c0 124.29824 100.77184 225.07008 225.07008 225.07008s225.07008-100.77184 225.07008-225.07008c0-124.30848-100.77696-225.0752-225.07008-225.0752s-225.07008 100.7616-225.07008 225.0752z' fill='%23FF6B6A'%3E%3C/path%3E%3Cpath d='M348.62592 600.18176v33.1008h59.57632v52.96128h33.1008v-52.96128h59.57632v-33.1008H441.30304v-19.86048h59.57632v-33.1008h-46.336l46.336-46.34112-19.85536-26.48064-52.96128 59.58144L368.4864 474.39872l-19.85536 26.48064 46.34112 46.34112h-46.34112v33.1008h59.57632v19.86048H348.62592z' fill='%23FFFFFF'%3E%3C/path%3E%3C/svg%3E");
+    }
+ 
+    .icon_wenjuan {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M61.44 512c0 248.84224 201.72288 450.56 450.56 450.56 248.84224 0 450.56-201.71776 450.56-450.56 0-248.83712-201.71776-450.56-450.56-450.56-248.83712 0-450.56 201.72288-450.56 450.56z' fill='%23F8E8FD'%3E%3C/path%3E%3Cpath d='M238.08 294.61504c0-20.17792 20.17792-40.35584 40.35584-40.35584h457.38496c20.17792 0 40.36096 13.45024 40.36096 40.35584 0 20.17792-20.1728 40.35584-40.36096 40.35584H271.71328c-20.18304-0.00512-33.63328-20.18304-33.63328-40.35584z' fill='%23B65DE9'%3E%3C/path%3E%3Cpath d='M271.71328 294.61504v470.83008c0 20.1728 26.89536 33.62304 40.35584 20.1728l33.62816-33.62816 33.63328 26.91072c6.72768 6.72256 26.9056 6.72256 33.63328 0l33.62816-33.62816 33.63328 33.62816c6.72256 6.72256 26.9056 6.72256 33.62304 0l33.64352-33.62816 33.62304 33.62816c6.72256 6.72256 26.91072 6.72256 33.62304 0l33.62816-33.62816 33.62816 33.62816c13.46048 13.45024 40.3712 6.72256 40.3712-20.17792V294.61504H271.71328z' fill='%23D7A3F9'%3E%3C/path%3E%3Cpath d='M352.42496 395.50464c0-6.72256 6.72768-13.45536 13.45536-13.45536h228.68992c6.72768 0 13.46048 6.72768 13.46048 13.45536 0 6.72256-6.72768 13.45024-13.46048 13.45024h-235.4176c-6.72768 0.00512-6.72768-6.72768-6.72768-13.45024z m0 73.98912c0-6.72768 6.72768-13.45536 13.45536-13.45536h174.87872c6.72768 0 13.45024 6.72768 13.45024 13.45536 0 6.72256-6.72256 13.45024-13.45024 13.45024h-181.6064c-6.72768 0-6.72768-6.72768-6.72768-13.45024z m0 80.7168c0-6.72256 6.72768-13.45536 13.45536-13.45536h275.76832c6.72768 0 13.46048 6.72256 13.46048 13.45536s-6.72768 13.45024-13.46048 13.45024H359.15264c-6.72768 0-6.72768-6.7328-6.72768-13.45024z m0 73.984c0-6.72256 6.72768-13.45024 13.45536-13.45024h228.68992c6.72768 0 13.46048 6.72256 13.46048 13.45024s-6.72768 13.46048-13.46048 13.46048h-235.4176c-6.72768 0-6.72768-6.7328-6.72768-13.46048z' fill='%23B65DE9'%3E%3C/path%3E%3C/svg%3E");
+    }
+ 
+    .icon_toutiao {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M288.235169 514.10828834l-51.169404-85.10326h-82.156138l51.388391 85.10326zM312.470129 401.25808034l-50.951439-85.130889h-82.793658l51.169404 85.130889zM958.856839 321.62950834H720.655715l16.571421-14.607696h-81.316004l-87.99717 77.729316h87.886653l20.327978-17.171078h184.440709l-113.196085 58.660004-49.801243-26.479071H591.055009l90.494037 55.905264-141.883451 62.902632h125.788891l72.319096-30.064736 64.253396 30.064736h135.094837L807.337937 452.70991634l138.051169-71.352072z' fill='%23ed364e'%3E%3C/path%3E%3Cpath d='M559.300794 606.23756834l-28.814256 37.610596h-96.352465l-22.574135-50.951439 51.497885-0.217964 32.719192-47.228651h-93.158726l52.173266-234.833423h-72.210625l-52.173266 234.833423H99.598904l-10.494005 47.228651h192.269001l-73.141833 61.413721H75.456041l-10.256598 46.15111 182.688809 0.217964 94.491071-78.33102 34.69008 78.33102h177.796382l72.612785-94.223988z' fill='%23ed364e'%3E%3C/path%3E%3Cpath d='M766.076184 522.18217334h-71.989591l-5.985318 26.880208H534.573623l-10.254551 46.152133h153.526629l-15.037485 66.709331h-30.494525l-10.510378 46.38647h37.063128l75.822896-44.90984 15.146978-68.185961h147.157571l32.299637-46.152133H760.111333z' fill='%23ed364e'%3E%3C/path%3E%3Cpath d='M775.365758 607.08486534l42.09984 93.588515h72.192206l-42.281989-93.588515z' fill='%23ed364e'%3E%3C/path%3E%3C/svg%3E");
+        width: 50px;
+        height: 50px;
+    }
+ 
+    .icon_daka {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M61.44 512c0 248.84224 201.7024 450.56 450.56 450.56 248.83712 0 450.56-201.71776 450.56-450.56 0-248.83712-201.72288-450.56-450.56-450.56-248.8576 0-450.56 201.72288-450.56 450.56z' fill='%23DEFCF9'%3E%3C/path%3E%3Cpath d='M377.41568 334.19264h400.68608v438.8864H377.41568v-438.8864z' fill='%237CF7DA'%3E%3C/path%3E%3Cpath d='M693.8624 745.1136H238.08V251.20768h455.7824v493.90592zM265.6256 278.54848v438.87616h400.68608V278.54848H265.6256z' fill='%2318DFB7'%3E%3C/path%3E%3Cpath d='M326.56384 422.26688c0-25.25184 0.14336-50.50368-0.07168-75.75552-0.07168-5.00736 1.11616-7.02976 6.60992-6.95808 42.15808 0.21504 84.31104 0.21504 126.46912 0 4.93568 0 6.53824 1.32096 6.46656 6.46656-0.20992 50.688-0.20992 101.376 0 152.06912 0 5.28384-1.73568 6.32832-6.53312 6.32832-42.15808-0.13824-84.31616-0.20992-126.46912 0-5.49376 0-6.61504-1.95072-6.54336-6.95808 0.20992-25.0368 0.07168-50.08384 0.07168-75.19232zM438.56384 367.3088H354.18112v109.35808h84.38272V367.3088z m178.98496 200.76032v26.5728H326.84544v-26.5728h290.70336z m-290.63168 89.94816v-26.56768h290.6368v26.56768H326.91712z m177.3824-280.13056h113.1776v26.5728H504.29952v-26.5728zM617.48224 467.968H504.29952v-26.5728h113.1776v26.5728z' fill='%2318DFB7'%3E%3C/path%3E%3C/svg%3E");
+    }
+</style>
+<style type="text/css">
+    .hiddenDiv {
+        display: none;
+    }
+    /* 遮罩层 */
+ 
+    .copymask {
+        text-align: left;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        filter: alpha(opacity=60);
+        background-color: #000;
+        z-index: 99999;
+        -moz-opacity: 0.5;
+        background: rgba(0,0,0,0.5);
+    }
+    /**招口令提示框**/
+    .copytip {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        text-align: left;
+        width: 90%;
+        /*margin-top:30%;
+    margin-left:5%;*/
+        background-color: #ffffff;
+        border-radius: 4px;
+        opacity: 1;
+    }
+ 
+    .downloadBtn {
+        color: #5995EF;
+        font-size: 18px;
+        margin-top: 25px;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        border: 1px solid #5995EF;
+        border-radius: 5px;
+        background-color: #FFF;
+        width: 44%;
+        height: 38px;
+    }
+ 
+    .copyBtn {
+        font-size: 18px;
+        margin-top: 25px;
+        margin-left: 2%;
+        margin-right: 5%;
+        border: 1px solid #FFF;
+        color: #FFF;
+        background: -webkit-linear-gradient(left top,#54B8F4,#5C78EB);
+        border-radius: 5px;
+        width: 44%;
+        height: 40px;
+    }
+ 
+    .copyTipTitle {
+        text-align: left;
+        color: #565656;
+        font-size: 18px;
+        font-weight: bolder;
+        padding-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+ 
+    .copyTipContent {
+        text-align: left;
+        color: #565656;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+ 
+    .closeimg {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+ 
+    .closebtn {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        /*background: url(../images/close2x.png);*/
+        border: none;
+        background-size: 20px;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+<section id="index_section" data-role="section" class="active" __init_controller__="true">
+    <header><div class="navbar bg-color-theme no-shadow"><div class="navbar-inner"><div class="left"><a href="#" class="back link icon-only"><i class="icon icon-back"></i></a></div><div class="title">众人帮</div><div class="right"><a href="/next/user_admin" class="link icon-only"><i class="icon icon-user"></i></a></div></div></div>
+        <div id="search" class="ui-search" href="/next/task_list?isSearch=1" data-toggle="html">
+            <div class="ui-searchbar-input" style="color:#999;line-height: 36px;">请输入悬赏主ID</div>
+        </div>
+    </header>
+    <article id="index_article" data-role="article" class="active" style="top: 112px; bottom: 56px;" __init_controller__="true">
+ 
+        <div class="swiper-container swiper-container-horizontal swiper-container-ios">
+            <div class="swiper-wrapper" style="transform: translate3d(-350px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 320px; margin-right: 30px;"><a href="http://wx.zhongrenbang.net/luntan/item.aspx?id=5863"><img src="//cdn2.zhongrenbang.cc/c/img/zrb_banner_yinsi.png" width="100%"></a></div>
+                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 320px; margin-right: 30px;"><a href="/earn/Introducer_Share"><img src="//cdn2.zhongrenbang.cc/c/img/zrb_banner_laren.jpg" width="100%"></a></div>
+                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 320px; margin-right: 30px;"><a href="/next/Task_Everyday"><img src="//cdn2.zhongrenbang.cc/c/img/zrb_banner_meiri.png" width="100%"></a></div>
+                <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 320px; margin-right: 30px;"><a href="http://wx.zhongrenbang.net/luntan/item.aspx?id=5863"><img src="//cdn2.zhongrenbang.cc/c/img/zrb_banner_yinsi.png" width="100%"></a></div>
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 320px; margin-right: 30px;"><a href="/earn/Introducer_Share"><img src="//cdn2.zhongrenbang.cc/c/img/zrb_banner_laren.jpg" width="100%"></a></div></div>
+            <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 16px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 16px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 16px;"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        <div class="block block-strong no-margin bg-color-white">
+                <p id="appcontent"><a href="#" id="openqiye">众人帮APP极速尊享体验，强烈建议您下载使用......</a></p>
+        </div>
+ 
+        <div class="row bg-color-white">
+            <div class="col-20 text-align-center"><i class="icon icon_toutiao"></i></div>
+            <div class="col-80 padding-right">
+                <div class="scroll" style="width:100%">
+                    <ul id="toutiao">
+        <li onclick="goDetail(9656014,'8')"><h4 class="ui-row text-fon16"><span class="text-color-orange fr">赏8.08元</span>「招商银行」 🔥一张图，不限新老🔥</h4></li>
+ 
+        <li onclick="goDetail(9659938,'8')"><h4 class="ui-row text-fon16"><span class="text-color-orange fr">赏1.7元</span>「我的人生」 新单首码自提0.3🔥</h4></li>
+ 
+        <li onclick="goDetail(9364087,'8')"><h4 class="ui-row text-fon16"><span class="text-color-orange fr">赏8.08元</span>「招商银行」 🌹微信扫码，不限新老用户🌹</h4></li>
+ 
+        <li onclick="goDetail(9064011,'8')"><h4 class="ui-row text-fon16"><span class="text-color-orange fr">赏8.16元</span>「招商银行」 不限制新老🔥20秒搞定</h4></li>
+        <li onclick="goDetail(9656014,'8')"><h4 class="ui-row text-fon16"><span class="text-color-orange fr">赏8.08元</span>「招商银行」 🔥一张图，不限新老🔥</h4></li></ul>
+                </div>
+            </div>
+        </div>
+        <div class="row text-align-center text-fon12 zrb-column">
+            <div class="col"><a href="/home/CirWelfare" class="color-gray"><i class="icon icon_fuli"></i><span>福利圈</span></a></div>
+            <div class="col"><a href="/next/task_list?type=9" class="color-gray"><i class="icon icon_jiandan"></i><span>简单悬赏</span></a></div>
+            <div class="col"><a href="/next/task_list?type=8" class="color-gray"><i class="icon icon_gaojia"></i><span>高价悬赏</span></a></div>
+            <div class="col"><a href="/next/Questionnaire" class="color-gray"><i class="icon icon_wenjuan"></i><span>调查问卷</span></a></div>
+                <div class="col"><a href="/dailyClock/dailyClock/dailyIndex.html?account=18126551047&amp;password=6B08D9CFE78BD5D7D5ED8605EAB2D856" class="color-gray"><i class="icon icon_daka"></i><span>每日打卡</span></a></div>
+        </div>
+        <div class="block-title"><a href="/next/task_list" class="float-right text-fon12">更多&gt;</a>推荐悬赏</div>
+        <div class="list"><ul>
+ 
+            <li onclick="goDetail(9540038,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/grouphead/2019110636RQQJKFG10223528395132.jpg" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            日常调查14<div class="item-footer">674人已赚 剩1486个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏1.06元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9629258,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/userhead/178211/8447821.png" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            中国银行不限新老领取券码<div class="item-footer">6人已赚 剩44个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏8.93元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(8676992,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/headimg/20190728/thumb_8471cc3a-0cfb-415f-8d3e-92b92bf05a20.jpg" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            电信积分1155变现🔥<div class="item-footer">9人已赚 剩51个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏5.1元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9627411,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/userhead/256751/3925675.png" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            回收各渠道爱奇艺月卡<div class="item-footer">1人已赚 剩18个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏5.02元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9675881,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/head/201901/thumb_3bf3f3af-edf6-4f99-93fe-b882ffdcfc30.jpg" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            平安工商邮浦汇中行积分兑换的副本的副本<div class="item-footer">0人已赚 剩10个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏70元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(8153422,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://cdn2.zhongrenbang.cc/C/img/icons/no_picture.png" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            魔视后续4天<div class="item-footer">404人已赚 剩45个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏0.43元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9529332,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/userhead/294061/8399406.png" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            ❤送你1元+自提0.5❤<div class="item-footer">32人已赚 剩68个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏1.02元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9494401,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/head/201906/thumb_f38ec070-aa6c-4ef0-96ff-62d1f438fef8.jpg" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            实惠喵购物<div class="item-footer">7人已赚 剩93个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏4.25元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9389692,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/userhead/11371/1831137.png" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            电信520积分<div class="item-footer">2人已赚 剩48个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏2.55元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9363354,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/userhead/133531/2983353.png" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            新单√小鲸喜<div class="item-footer">14人已赚 剩38个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏4.08元</div>
+                    </div>
+                </div>
+            </li>
+ 
+            <li onclick="goDetail(9592261,'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="https://osszrbimg.zrb.net/head/20190827/567897410495408119937.jpg" width="40">
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            兰♣中青看点♣第二天<div class="item-footer">15人已赚 剩97个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏0.85元</div>
+                    </div>
+                </div>
+            </li>
+ 
+        </ul></div>
+        <div class="block-title">企业会员推荐</div>
+        <div class="block block-strong bg-color-white no-hairlines viplist"><div class="row text-align-center text-fon12">
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=6659985&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/299851/6659985.png" width="40" style="border-radius:100%"><span class="panel-visible">价格好评</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=2849784&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/297841/2849784.png" width="40" style="border-radius:100%"><span class="panel-visible">全场12圆</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=670000&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/100001/670000.png" width="40" style="border-radius:100%"><span class="panel-visible">价格美丽</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=2986435&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/head/20191026/298643511353056918376.jpg" width="40" style="border-radius:100%"><span class="panel-visible">好评率最好</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=5639935&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/299351/5639935.png" width="40" style="border-radius:100%"><span class="panel-visible">坏坏坏</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=2604799&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/247991/2604799.png" width="40" style="border-radius:100%"><span class="panel-visible">大胡籽叔叔</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=8828341&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/83411/8828341.png" width="40" style="border-radius:100%"><span class="panel-visible">只狼</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=11221986&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/19861/11221986.png" width="40" style="border-radius:100%"><span class="panel-visible">五星好评</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=1355485&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/headimg/20190802/thumb_4bfecb7b-59f3-4708-b774-40480fdea583.jpg" width="40" style="border-radius:100%"><span class="panel-visible">新单推荐</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=6191394&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/113941/6191394.png" width="40" style="border-radius:100%"><span class="panel-visible">闪付价髙</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=4169881&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/298811/4169881.png" width="40" style="border-radius:100%"><span class="panel-visible">面对疾风咯</span></a>
+ 
+            <a href="/home/ciruser?type=0&amp;zrbsign=0&amp;zrbId=4931869&amp;pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="https://osszrbimg.zrb.net/userhead/118691/4931869.png" width="40" style="border-radius:100%"><span class="panel-visible">小屁孩</span></a>
+ 
+        </div></div>
+ 
+    </article>
+    <div id="copymask" class="hiddenDiv copymask">
+        <div id="copytip" class="copytip">
+ 
+            <div><button id="cmbwordclosebtn" class="closebtn" onclick="javascript:closeCMBWord();return false;"></button></div>
+            <div class="copyTipTitle">无法打开？</div>
+            <div class="copyTipContent">
+                （如果您尚未安装众人帮App，点击立即下载试试吧~）
+            </div>
+            <input type="hidden" id="urlToCopy" value="copy success">
+            <button id="cmbwordloadbtn" class="downloadBtn" onclick="javascript:downloadpage();document.getElementById('copymask').style.display = 'none';return false;">立即下载</button><button id="cmbwordclose" type="button" class="copyBtn" onclick="javascript:document.getElementById('copymask').style.display = 'none';return false;">关闭</button>
+        </div>
+    </div>
+    <footer class="ui-footer-white">
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="/next/index" class="tab-link active">
+                    <i class="iconfont icon-homefill text-fon24"></i>
+                    <span class="tabbar-label">悬赏</span>
+                </a>
+                <a href="/Next/faxian" class="tab-link">
+                    <i class="iconfont icon-find text-fon24"></i>
+                    <span class="tabbar-label">发现</span>
+                </a>
+                <a href="/earn/Introducer_Share" class="tab-link" style="overflow:inherit;position:relative">
+                    <img src="/c/img/icon_tabbar_apprentice.png" alt="邀请好友" style="width:90px;position:absolute;bottom:0;">
+                </a>
+                <a href="/chatim/list.html" class="tab-link">
+                    <i class="iconfont icon-mark text-fon24"></i>
+                    <span class="tabbar-label">消息</span>
+                </a>
+                <a href="/next/user_admin" class="tab-link">
+                    <i class="iconfont icon-people text-fon24"></i>
+                    <span class="tabbar-label">我的</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+ 
+    <script type="text/html" id="toutiaolist">
+        {{each list as value i}}
+        <li onclick="goDetail({{value.id}},'8')"><h4 class="ui-row text-fon16"><span class="text-color-orange fr">赏{{value.themoney}}元</span>{{value.prizename}}</h4></li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="list">
+        <ul>
+            {{each list as value i}}
+            <li onclick="goDetail({{value.jobid}},'')">
+                <div class="item-content">
+                    <div class="item-media">
+                        <img src="{{value.starttime}}" width="40" />
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            {{if value.type==-101 || value.type==-103 || value.type==-104 || value.type==-105}}
+                            {{if value.type==-101}}<span class="badge color-orange">+ 好友</span>
+                            {{else if value.type==-103}}<span class="badge color-blue">转发</span>
+                            {{else if value.type==-104}}<span class="badge color-orange">+ 关注</span>
+                            {{else if value.type==-105}}<span class="badge color-green">投票</span>
+                            {{/if}}
+                            {{/if}}{{value.title}}<div class="item-footer">{{value.url}}人已赚 剩{{value.cityid}}个</div>
+                        </div>
+                        <div class="item-after text-color-orange">赏{{value.gongzi}}元</div>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/html" id="viplist">
+        <div class="row text-align-center text-fon12">
+            {{each list as value i}}
+            <a href="/home/ciruser?type=0&zrbsign=0&zrbId={{value.uid}}&pinglunType=1" class="col-25 color-gray" style="padding:5px"><img src="{{value.userpic}}" width="40" style="border-radius:100%" /><span class="panel-visible">{{value.nickname}}</span></a>
+            {{/each}}
+        </div>
+    </script>
+    <script>
+        var signok=1;
+        var downloader,
+            scheme = 'com.jianzhiku.jianzhi://',  // 需要打开的 scheme 地址
+            download = '/earn/Down';  // 如果打开scheme失效的app下载地址
+        function downloadpage() {
+            window.location.href = download;
+        }
+      //  强烈推荐您下载，<a href="#" id="openqiye">众人帮</a>APP，使用更方便，操作更灵活！
+        //是否ios  Safari 浏览器中
+        if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
+            var content =""
+            if (signok == 1) {
+                content ="<a href=\"#\" id=\"openqiye\">众人帮APP极速尊享体验，强烈建议您下载使用......</a>";
+            } else {
+                content = "众人帮APP正全力升级中,请稍后......";
+             }
+            $("#appcontent").html(content);
+ 
+        } else
+        {
+            var content = "<a href=\"#\"  onclick='downloadpage()' >众人帮APP极速尊享体验，强烈建议您下载使用......</a>";
+             $("#appcontent").html(content);
+ 
+        }
+        if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
+            document.getElementById('openqiye').onclick = function () {
+ 
+                if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
+                    window.location.href = scheme;  // 尝试打开 scheme
+                    setTimeout(function () {
+                        document.getElementById('copymask').style.display = "block";
+                    }, 2800);
+                } else {
+                    window.location.href = download;
+                }
+            };
+        }
+    </script>
+    <script type="text/javascript">
+                var uid = "17692172";
+                $(function () {
+                    if (Device.isAlipay) {
+                        if (confirm("在支付宝中做悬赏，无法正常上传图片，获得赏金。是否立即下载众人帮赚钱App?")) {
+                            location.href = "/earn/zhongrenbang";
+                        }
+                    }
+                    $.ajax({
+                        type: "post",
+                        url: "/api/Other/BidList",
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            "uid": uid
+                        }),
+                        success: function (data) {
+                            if (data != "" && data != null) {
+                                var datalist = {
+                                    list: data
+                                };
+                                var html = template("toutiaolist", datalist);
+                                $("#toutiao").append(html);
+                                TouTiaoLunBo();
+                            }
+                        }
+                    });
+                    //TouTiaoLunBo();//本地测试使用
+                    Get_List();
+                    Get_VipList();
+ 
+                    var swiper = new Swiper('.swiper-container', {
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            dynamicBullets: true,
+                        },
+                    });
+ 
+                });
+                function Get_List() {
+                    $.ajax({
+                        type: "post",
+                        url: "/api/EarnUser/EarnRecommend",
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            "uid": uid
+                        }),
+                        success: function (data) {
+                            if (data == "" || data == null) {
+                                if (!$('.result-tip').hasClass('result-tip')) {
+                                    $('.list').after("<div class=\"result-tip\"><span class=\"ui-nodata\" style=\"margin-top: 110px\">没有数据</span></div>");
+                                }
+                            }
+                            var datalist = {
+                                list: data
+                            };
+                            var html = template("list", datalist);
+                            $(".list").append(html);
+                        }
+                    });
+                }
+                function Get_VipList() {
+                    $.ajax({
+                        type: "post",
+                        url: "/api/EarnUser/VipRecommend",
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                        }),
+                        success: function (data) {
+                            var datalist = {
+                                list: data
+                            };
+                            var html = template("viplist", datalist);
+                            $(".viplist").append(html);
+                        }
+                    });
+                }
+                function goDetail(earnid, channel) {
+                    var detailUrl = "/next/task_detail?earnid=" + earnid;
+                    if (channel != "") {
+                        detailUrl += "&channel=" + channel;
+                    }
+                    detailUrl += "&iswww=1";
+                    location.href = detailUrl;
+                }
+                function TouTiaoLunBo() {
+                    var scrollDiv = $(".scroll"),
+                        $ul = scrollDiv.find("ul"),
+                        $li = scrollDiv.find("li"),
+                        $length = $li.length,
+                        $liHeight = $li.height(),
+                        num = 0;
+ 
+                    if (scrollDiv.length == 0) {
+                        return;
+                    }
+ 
+                    if ($length > 1) {
+                        $ul.append($li.eq(0).clone());
+                        setInterval(
+                            function () {
+                                num++;
+                                $ul.addClass("animate").css("-webkit-transform", "translateY(-" + $liHeight * (num) + "px)");
+                                setTimeout(
+                                    function () {
+                                        if (num == $length) {
+                                            $ul.removeClass("animate").css("-webkit-transform", "translateY(0)");
+                                            num = 0;
+                                        }
+                                    }, 300);
+                            }, 3000);
+                    }
+                }
+    </script>
+</section>
+<div id="section_container_mask"></div></div>
+    <script src="//cdn2.zhongrenbang.cc/bundles/agileexmobi2"></script>
+ 
+ 
+    <div style="display:none"><script type="text/javascript">var cnzz_s_tag = document.createElement('script');cnzz_s_tag.type = 'text/javascript';cnzz_s_tag.async = true;cnzz_s_tag.charset = 'utf-8';cnzz_s_tag.src = 'https://w.cnzz.com/c.php?id=1253252559&async=1';var root_s = document.getElementsByTagName('script')[0];root_s.parentNode.insertBefore(cnzz_s_tag, root_s);</script></div>
+ 
+ 
+<div id="aside_container"></div></body>
