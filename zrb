@@ -208,7 +208,7 @@
                 <input type="password" name="txtpwd" id="txtpwd" class="item-input border-radius" placeholder="请设置登录密码(6-23位数字及字母)" maxlength="23" required="">
             </label>
             <div style="color:#fff;margin-top:12px">点击注册即表示您已阅读并同意<a href="http://m.zrb.net/luntan/helpitem.aspx?id=3866" style="text-decoration: underline;color:#FFEB3B;" target="_blank">《众人帮服务协议》</a>与<a href="http://m.zrb.net/luntan/helpitem.aspx?id=5918" style="text-decoration: underline;color:#FFEB3B;" target="_blank">《众人帮隐私政策》</a></div>
-            <input type="submit" id="submit_btn" value="注册领取1元红包" class="button border-radius text-color-white" style="margin-top:12px">
+            <input type="submit" id="submit_btn" value="将此链接分享给好友并注册可领1元红包" class="button border-radius text-color-white" style="margin-top:12px">
     </div>
 </form>
     <div class="block text-color-white">
