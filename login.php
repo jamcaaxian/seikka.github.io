@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>test</title>
+<script> function fun() { var password=document.getElementById("password");
+                        if (password.value == "123") { window.open("http://www.baidu.com"); 
+                        return true;
+                        }else { return false; } 
+                        } </script> 
+</head>
+<body> 
+<input type="password" name="password" id="passsword"/> 
+<input type="button" value="跳转" onclick=" return fun()"/> 
+</body>
+</html>
